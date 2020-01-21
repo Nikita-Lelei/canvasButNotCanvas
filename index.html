@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<head>
+    <title>Input/Output canvas</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  
+    <div class="box" id="dropBox">
+        <div>Enter input here...</div>
+     </div>
+     <label for="fileInput" class="button">
+         select a file
+     </label>
+     <input id="fileInput" type="file" onchange="processFiles(this.files)">
+     
+     <div class="box" id="outBox">
+        <pre id="output">no data here</pre>
+     </div>
+     <label for="downloadButton" id="downloadLabel">
+        <p id = "dowText" hidden>download output</p> 
+    </label>
+     <input type="button" value="download" id="downloadButton">
+     
+  </div>
+</body>
+</html>
